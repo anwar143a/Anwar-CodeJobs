@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODJOBS - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>KODJOBS</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active">
+                    <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-briefcase"></i> Jobs</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-file-alt"></i> Applications</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                </li>
+                <li>
+                    <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search jobs...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-info">
+                    <span class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </span>
+                    <div class="user-profile">
+                        <img src="https://via.placeholder.com/40" alt="User Profile">
+                        <span class="user-name">Welcome, <span id="userName">User</span></span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <!-- Stats Cards -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="stat-info">
+                            <h3>Applied Jobs</h3>
+                            <p>12</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="stat-info">
+                            <h3>Interviews</h3>
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-info">
+                            <h3>Pending</h3>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <div class="stat-info">
+                            <h3>Saved Jobs</h3>
+                            <p>8</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Applications -->
+                <div class="recent-applications">
+                    <h2>Recent Applications</h2>
+                    <div class="applications-list">
+                        <div class="application-card">
+                            <div class="company-logo">
+                                <img src="https://via.placeholder.com/50" alt="Company Logo">
+                            </div>
+                            <div class="application-info">
+                                <h3>Software Developer</h3>
+                                <p>Tech Solutions Inc.</p>
+                                <span class="status pending">Pending</span>
+                            </div>
+                            <div class="application-date">
+                                <p>Applied: 2 days ago</p>
+                            </div>
+                        </div>
+                        <div class="application-card">
+                            <div class="company-logo">
+                                <img src="https://via.placeholder.com/50" alt="Company Logo">
+                            </div>
+                            <div class="application-info">
+                                <h3>Frontend Developer</h3>
+                                <p>Web Design Co.</p>
+                                <span class="status interview">Interview Scheduled</span>
+                            </div>
+                            <div class="application-date">
+                                <p>Applied: 5 days ago</p>
+                            </div>
+                        </div>
+                        <div class="application-card">
+                            <div class="company-logo">
+                                <img src="https://via.placeholder.com/50" alt="Company Logo">
+                            </div>
+                            <div class="application-info">
+                                <h3>UI/UX Designer</h3>
+                                <p>Creative Studio</p>
+                                <span class="status rejected">Rejected</span>
+                            </div>
+                            <div class="application-date">
+                                <p>Applied: 1 week ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Jobs -->
+                <div class="recommended-jobs">
+                    <h2>Recommended Jobs</h2>
+                    <div class="jobs-grid">
+                        <div class="job-card">
+                            <div class="job-header">
+                                <img src="https://via.placeholder.com/40" alt="Company Logo">
+                                <div class="job-title">
+                                    <h3>Senior Developer</h3>
+                                    <p>Tech Corp</p>
+                                </div>
+                            </div>
+                            <div class="job-details">
+                                <span><i class="fas fa-map-marker-alt"></i> New York</span>
+                                <span><i class="fas fa-dollar-sign"></i> 120k - 150k</span>
+                                <span><i class="fas fa-clock"></i> Full Time</span>
+                            </div>
+                            <button class="apply-btn">Apply Now</button>
+                        </div>
+                        <div class="job-card">
+                            <div class="job-header">
+                                <img src="https://via.placeholder.com/40" alt="Company Logo">
+                                <div class="job-title">
+                                    <h3>Product Manager</h3>
+                                    <p>Innovation Labs</p>
+                                </div>
+                            </div>
+                            <div class="job-details">
+                                <span><i class="fas fa-map-marker-alt"></i> San Francisco</span>
+                                <span><i class="fas fa-dollar-sign"></i> 100k - 130k</span>
+                                <span><i class="fas fa-clock"></i> Full Time</span>
+                            </div>
+                            <button class="apply-btn">Apply Now</button>
+                        </div>
+                        <div class="job-card">
+                            <div class="job-header">
+                                <img src="https://via.placeholder.com/40" alt="Company Logo">
+                                <div class="job-title">
+                                    <h3>UX Designer</h3>
+                                    <p>Design Studio</p>
+                                </div>
+                            </div>
+                            <div class="job-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                                <span><i class="fas fa-dollar-sign"></i> 90k - 120k</span>
+                                <span><i class="fas fa-clock"></i> Full Time</span>
+                            </div>
+                            <button class="apply-btn">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html> 
